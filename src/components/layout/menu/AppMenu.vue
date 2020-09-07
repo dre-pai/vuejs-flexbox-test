@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 $border-color: #c9c9c9;
-$border-width: 2px;
+$border-width: 1px;
 
 .menu-row {
   display: flex;
@@ -46,6 +46,7 @@ $border-width: 2px;
 .menu-row-full a {
   flex-basis: 100%;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.15em;
+  padding: 18px 0;
 }
 </style>
