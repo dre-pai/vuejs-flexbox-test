@@ -1,9 +1,9 @@
 <template>
-  <a :href="`${link}`">
-    <img :src="require(`@/assets/images/${imageName}`)" />
-    <div class="text-center">
-      <span>{{text}}</span>
+  <a :href="`${link}`" class="box-shadow">
+    <div class="image-tile-wrap">
+      <img class="img-fluid" :src="require(`@/assets/images/${imageName}`)" />
     </div>
+    <div class="tile-text-container text-center">{{text}}</div>
   </a>
 </template>
 
@@ -28,24 +28,25 @@ export default {
 
 <style lang="scss" scoped>
 a {
+  text-decoration: none;
   background-color: #fff;
   color: #000;
   font-weight: bold;
   font-size: 1.2em;
-}
-div {
-  position: relative;
-  background-color: #fff;
-  height: 75%;
+  display: flex;
+  flex-direction: column;
 }
 
-span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.image-tile-wrap {
+  overflow: hidden;
+  height: 70%;
 }
-img {
-  width: 100%;
+
+.tile-text-container {
+  height: 30%;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

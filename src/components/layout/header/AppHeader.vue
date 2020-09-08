@@ -1,10 +1,10 @@
 <template>
   <header>
-    <div class="row">
+    <div class="row header-row">
       <img src="@/assets/images/logo.png" />
       <HeaderIcons />
     </div>
-    <div class="row">
+    <div class="row header-row">
       <SearchBar />
     </div>
   </header>
@@ -29,8 +29,9 @@ header {
   padding: 15px;
 }
 
-.row {
+.header-row {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 </style>

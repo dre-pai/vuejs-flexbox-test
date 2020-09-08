@@ -1,11 +1,11 @@
 <template>
   <div id="markets-row">
-    <ImageTile imageName="datacomm.png" text="DataComm" link="#" />
-    <ImageTile imageName="hvac.png" text="HVAC" link="#" />
-    <ImageTile imageName="industrial.png" text="Industrial" link="#" />
-    <ImageTile imageName="lighting.png" text="Lighting" link="#" />
-    <ImageTile imageName="energy.png" text="Energy Efficiency" link="#" />
-    <ImageTile imageName="utility.png" text="Utility" link="#" />
+    <ImageTile class="col-sixth" imageName="datacomm.png" text="DataComm" link="#" />
+    <ImageTile class="col-sixth" imageName="hvac.png" text="HVAC" link="#" />
+    <ImageTile class="col-sixth" imageName="industrial.png" text="Industrial" link="#" />
+    <ImageTile class="col-sixth" imageName="lighting.png" text="Lighting" link="#" />
+    <ImageTile class="col-sixth" imageName="energy.png" text="Energy Efficiency" link="#" />
+    <ImageTile class="col-sixth" imageName="utility.png" text="Utility" link="#" />
   </div>
 </template>
 
@@ -18,13 +18,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+a {
+  margin: 0 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
 #markets-row {
   display: flex;
-}
-
-a {
-  flex-basis: 16.66%;
-  margin: 0 10px;
 }
 </style>

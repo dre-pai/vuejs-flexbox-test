@@ -29,7 +29,6 @@ export default {
 a {
   display: flex;
   justify-content: center;
-  align-content: center;
   text-decoration: none;
   padding: 15px 0;
   background-color: #fff;

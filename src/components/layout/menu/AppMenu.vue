@@ -4,14 +4,14 @@
       <MenuLink text="Shop all categories" icon="ic_categories.png" link="#" />
     </div>
     <div class="menu-row menu-row-thirds">
-      <MenuLink text="My Catalog" icon="ic_playlist_add_check.png" link="#" />
-      <MenuLink text="My List" icon="ic_list.png" link="#" />
-      <MenuLink text="Live Help" icon="ic_chat.png" link="#" />
+      <MenuLink class="col-third" text="My Catalog" icon="ic_playlist_add_check.png" link="#" />
+      <MenuLink class="col-third" text="My List" icon="ic_list.png" link="#" />
+      <MenuLink class="col-third" text="Live Help" icon="ic_chat.png" link="#" />
     </div>
     <div class="menu-row menu-row-thirds">
-      <MenuLink text="PIM" icon="ic_check_circle.png" link="#" />
-      <MenuLink text="Account" icon="ic_categories.png" link="#" />
-      <MenuLink text="Branch Locations" icon="ic_place.png" link="#" />
+      <MenuLink class="col-third" text="PIM" icon="ic_check_circle.png" link="#" />
+      <MenuLink class="col-third" text="Account" icon="ic_categories.png" link="#" />
+      <MenuLink class="col-third" text="Branch Locations" icon="ic_place.png" link="#" />
     </div>
   </div>
 </template>
@@ -37,7 +37,6 @@ $border-width: 1px;
   }
 }
 .menu-row-thirds a {
-  flex-basis: 33.33%;
   &:nth-child(2) {
     border-left: $border-width solid $border-color;
     border-right: $border-width solid $border-color;
