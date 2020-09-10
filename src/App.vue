@@ -20,16 +20,20 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "@/assets/css/global-vars.scss";
+
 body {
   margin: 0;
   background-color: #ededed;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .row {
   max-width: 960px;
   margin: 1.5em auto;
 }
+
 .text-center {
   text-align: center;
 }
@@ -63,5 +67,14 @@ h2 {
 
 .img-fluid {
   width: 100%;
+}
+
+@media (max-width: $break1) {
+  .row {
+    margin: 1.5em 0.75em;
+  }
+  .break1-hide {
+    display: none;
+  }
 }
 </style>

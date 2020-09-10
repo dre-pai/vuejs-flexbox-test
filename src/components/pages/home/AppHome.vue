@@ -1,7 +1,7 @@
 <template>
   <div id="home-container">
     <AppMenu />
-    <div class="row">
+    <div class="row break1-hide">
       <h2 class="text-center">Product Markets</h2>
       <MarketsRow />
     </div>
