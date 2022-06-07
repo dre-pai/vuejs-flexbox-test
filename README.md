@@ -1,5 +1,3 @@
-# rexel-code-challenge
-
 ## Project setup
 ```
 npm install
